@@ -61,7 +61,7 @@ void createHeap(int *array , int count )
 		int child = 2*parent +1 ; 
 		while(child<=count)   //loop to go deeper at every value of i 
 		{
-			if(child+1 < count && array[child+1] > array[child])
+			if(child+1 <= count && array[child+1] > array[child])
 				child++;
 			if(array[parent]<array[child])
 			{		
